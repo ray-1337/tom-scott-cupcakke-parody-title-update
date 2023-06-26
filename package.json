@@ -2,5 +2,8 @@
   "name": "tom-scott-cupcakke-parody-title-update",
   "main": "index.js",
   "author": "ray",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
 }
