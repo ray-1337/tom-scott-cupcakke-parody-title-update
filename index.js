@@ -19,7 +19,7 @@ async function main() {
   const {statistics, snippet} = videoResult.data.items[0];
 
   // customizable
-  const newTitle = `This Video Has ${statistics.viewCount} Views (CupcakKe Remix)`;
+  const newTitle = `This Video Has ${(statistics?.viewCount || 0).toLocaleString()} Views (CupcakKe Remix)`;
 
   if (snippet.title !== newTitle) {
     snippet.title = newTitle;
