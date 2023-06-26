@@ -9,6 +9,7 @@ const clientSecret = process.env.CLIENT_SECRET;
 const refresh_token = process.env.REFRESH_TOKEN;
 const access_token = process.env.ACCESS_TOKEN;
 const YOUTUBE_VIDEO_ID = process.env.YOUTUBE_VIDEO_ID;
+const intervalTime = ms("5m"); // 5m means 5 minutes
 
 async function main() {
   const authClient = new google.auth.OAuth2({clientId, clientSecret});
@@ -29,6 +30,6 @@ async function main() {
 
 main();
 
-setInterval(() => main(), ms("10m"));
+setInterval(() => main(), intervalTime);
 
 console.log("Ready.");
