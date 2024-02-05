@@ -25,6 +25,7 @@ async function main() {
   if (snippet.title !== newTitle) {
     snippet.title = newTitle;
     await youtube.videos.update({part: 'snippet', requestBody: { id: YOUTUBE_VIDEO_ID, snippet }});
+    console.log(`Updated at ${Date.now()} - [${snippet.title}]`)
   };
 };
 
