@@ -1,6 +1,7 @@
 {
   "name": "tom-scott-cupcakke-parody-title-update",
   "main": "index.js",
+  "packageManager": "pnpm@8.14.2",
   "author": "ray",
   "license": "MIT",
   "dependencies": {
